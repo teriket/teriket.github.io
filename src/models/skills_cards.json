@@ -1,0 +1,14 @@
+{
+    "skills" : [
+        {
+            "image_source" : "",
+            "title" : "C++",
+            "description" : "" 
+        },
+        {
+            "image_source" : "",
+            "title" : "Python",
+            "description" : ""
+        }
+    ]
+}
