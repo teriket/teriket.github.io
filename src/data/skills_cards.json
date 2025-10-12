@@ -2,11 +2,13 @@
     "skills" : [
         {
             "image_source" : "",
+            "age" : "4 years",
             "title" : "C++",
             "description" : "" 
         },
         {
             "image_source" : "",
+            "age" : "4 years",
             "title" : "Python",
             "description" : ""
         }

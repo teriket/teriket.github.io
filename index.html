@@ -11,89 +11,207 @@
     <title>Tanner Hunt's portfolio</title>
   </head>
 
-  <body>
+  <body style="background-color: #122752;">
     <!-- banner -->
-    <div class="navbar navbar-inverse">
-        <div class="btn-group btn-group-md">
+    <div class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 3; background-color: white;">
+        <div class="btn-group btn-group-md" >
             <a href="" class="btn btn-primary">Home</a>
             <a href="src/views/data_science_view.html" class="btn">Data Science</a>
             <a href="src/views/graphics_and_games_view.html" class="btn">Computer Graphics</a>
+            <!-- Features to be added after this class is over
             <a href="src/views/get_to_know_me.html" class="btn">Get to know me</a>
-            <a href="src/views/contact_me_view.html" class="btn">Contact Me!</a>
+            <a href="src/views/contact_me_view.html" class="btn">Contact Me</a>
+            -->
         </div>
     </div>
 
     <!-- header -->
-    <div class="container-fluid">
-        <!--example code for positioned in front of eachother items-->> 
-        <div style="position: relative; width: 200px; height: 200px; background-color: lightblue;">
-            <div style="position: absolute; top: 50px; left: 50px; width: 100px; height: 100px; background-color: red; z-index: 2;">
-                Front Element
-            </div>
-            <div style="position: absolute; top: 70px; left: 70px; width: 100px; height: 100px; background-color: green; z-index: 1;">
-                Back Element
-            </div>
-        </div>
+<div class="container-fluid position-relative">
+    <!-- backsplash image -->
+    <img src="src/assets/images/mountain_backsplash.jpg" 
+         class="img-fluid" 
+         style="z-index: 1">
+    
+    <!-- profile card -->
+    <div class="profile-card position-absolute top-50 start-50 translate-middle p-4 h-100"
+         style="background-color: white;z-index: 2; width: 300px">
+        <img src="src/assets/images/headshot.png" class="img-fluid mb-3 rounded-circle" alt="Profile image">
+        <h2 class="name_placard text-center">Tanner Hunt</h2>
+        <p>Headline text under name — "I am a software engineer..."</p>
         
-        <!-- backsplash image -->
-        <img src="src/assets/images/mountain_backsplash.jpg" 
-            class="img-responsive" 
-            style="">
-        
-        <!-- profile card -->
-        <div>
-            <img src="" class="homescreen_header_profile_picture"></img>
-            <h2 class="name_placard">Tanner Hunt</h2>
-            <p>headline text under name -- "I am a software engineer..."</p>
+        <!-- contact info -->
+        <div class="contact_info text-center py-3">
+            <a href="src/assets/documents/Tanner_Hunt _Resume.docx" class="btn btn-secondary">Resume</a>
+            <a href="https://www.linkedin.com/in/tanner-hunt-co/" class="btn btn-secondary">Linkedin</a>
+            <a href="https://www.github.com/teriket" class="btn btn-secondary">github</a>
         </div>
     </div>
+</div>
 
-    <!-- Quote break -->>
+    <!-- Quote break -->
     <div class="quote_break">
         <p>quote text</p>
     </div>
 
     <!-- skills -->
-    <div class="row" style="background-color: aqua;">
-        <!-- skill card -->>
-        <div class="card col-sm-2" style="border: none; margin: 2rem;" href="">
-            <img src="src/assets/images/c-plus-plus.png" class="card-img-top" style="scale: 75%;">
+    <div class="px-4 pt-5 my-5 text-center border-bottom" style="background-image: linear-gradient(#122752, white )">
+    <h1 class="display-4 fw-bold text-light">Technologies</h1>
+    
+    <h2 class="display-6 fw-bold text-light">Programming Languages</h2>
+    <!-- skill cards -->
+    <!-- Programming Languages -->
+    <div class="row">
+         <!-- C++-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem;" href="">
+            <img src="src/assets/images/c-plus-plus.png" class="card-img-top" style="scale: 75%;" alt="C plus plus logo">
             <div class="card-body">
                 <h5 class="card-title">C++</h5>
                 <h6 class="card-subtitle mb-2 text-muted">2 years</h6>
-                <p class="card-text">card description.  Here is a longer description that may overlap on multiple lines if I am lucky</p>
+                <p class="card-text">Experience writing C++ code in university coursework including data structures and algorithms, and computational graphics.  Additional project-based work in game engine development.</p>
             </div>
         </div>
 
-        <div class="card col-sm-2" style="border: none; margin: 2rem" href="">
+        <!-- Python-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="" alt="Python logo">
             <img src="src/assets/images/python.png" class="card-img-top" style="scale: 75%;">
             <div class="card-body">
                 <h5 class="card-title">Python</h5>
-                <h6 class="card-subtitle mb-2 text-muted">2 years</h6>
-                <p class="card-text">card description.  Here is a longer description that may overlap on multiple lines if I am lucky</p>
+                <h6 class="card-subtitle mb-2 text-muted">3 years</h6>
+                <p class="card-text">Experience writing python code in university coursework.  Additional experience using python for data science in a healthcare setting to investigate infection rates and patient deterioration data.</p>
             </div>
         </div>
 
+        <!-- Java-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/Java-Logo.png" class="card-img-top" style="scale: 75%;" alt="Java logo">
+            <div class="card-body">
+                <h5 class="card-title">Java</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2 years</h6>
+                <p class="card-text">Experience from university coursework and additional project-based work in writing a Swift application.</p>
+            </div>
+        </div>
 
-        <!--Defunct, remove after capturing img-rounded class as appropriate-->>
-        <div class="skills_cards">
-            <img src="" class="img-rounded">
-            
-        <!-- cards with image of skill, then brief description below -->
+        <!-- javascript-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/Javascript.png" class="card-img-top" style="scale: 75%;" alt="Javascript logo">
+            <div class="card-body">
+                <h5 class="card-title">Javascript</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2 years</h6>
+                <p class="card-text">Experience in javascript from learning fullstack development from Phillip Ackermans "Fullstack Development."  Project based experience writing applets for SNHU's computer science club "Coding United" and in SNHU's Full Stack Web Development course.</p>
+            </div>
+        </div>
+
+        <!-- C#-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/csharp-logo.png" class="card-img-top" style="scale: 75%;" alt="C-sharp logo">
+            <div class="card-body">
+                <h5 class="card-title">C#</h5>
+                <h6 class="card-subtitle mb-2 text-muted">4 years</h6>
+                <p class="card-text">Project-based experience building games in Unity Game Engine</p>
+            </div>
+        </div>
+
+        <!-- typescript -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/ts-logo.png" class="card-img-top" style="scale: 75%;" alt="Typescript logo">
+            <div class="card-body">
+                <h5 class="card-title">Typescript</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 Months</h6>
+                <p class="card-text">Experience gained from building a MEAN application in SNHU's CS499: Full Stack Web Development</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="display-6 fw-bold text-body-emphasis">Tech Stacks</h2>
+
+    <div class="row">
+         <!-- MongoDB -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/mongo-db-logo.png" class="card-img-top" style="scale: 75%;" alt="mongo DB logo">
+            <div class="card-body">
+                <h5 class="card-title">MongoDB</h5>
+                <h6 class="card-subtitle mb-2 text-muted">6 Months</h6>
+                <p class="card-text">Experience gained from university coursework and extending course projects afterwards</p>
+            </div>
+        </div>
+
+         <!-- Express -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/express-js-logo.png" class="card-img-top" style="scale: 75%;" alt="Express JS logo">
+            <div class="card-body">
+                <h5 class="card-title">Express</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 Months</h6>
+                <p class="card-text">Experience gained from university coursework and extending course projects afterwards</p>
+            </div>
         </div>
         
-        <!-- contact info -->
-        <div class="contact_info">
-        <p>buttons with resume, linkedin, github</p>
+        <!-- Angular -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/angular-logo.png" class="card-img-top" style="scale: 75%;" alt="Angular logo">
+            <div class="card-body">
+                <h5 class="card-title">Angular</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 Months</h6>
+                <p class="card-text">Experience gained from university coursework</p>
+            </div>
         </div>
 
+        <!-- Node.js -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/nodejsHex.svg" class="card-img-top" style="scale: 75%;" alt="NodeJS logo">
+            <div class="card-body">
+                <h5 class="card-title">Node.js</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 Months</h6>
+                <p class="card-text">Experience gained from university coursework and extending projects afterwards</p>
+            </div>
+        </div>
+
+        
+        <!-- NMySQL -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/mysql-logo.png" class="card-img-top" style="scale: 75%;" alt="MySQL logo">
+            <div class="card-body">
+                <h5 class="card-title">MySQL</h5>
+                <h6 class="card-subtitle mb-2 text-muted">9 Months</h6>
+                <p class="card-text">Experience gained from SNHU's database management course and project-based mobile-app development</p>
+            </div>
+        </div>
     </div>
 
-    <!-- projects -->
-    <div class="homepage_project_cards">
-        <!-- card -->
+    <h2 class="display-6 fw-bold text-body-emphasis">Misc.</h2>
 
+    <div class="row">
+        <!-- Unity -->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/unity-logo.png" class="card-img-top" style="scale: 75%;" alt="Unity game engine logo">
+            <div class="card-body">
+                <h5 class="card-title">Unity Game Engine</h5>
+                <h6 class="card-subtitle mb-2 text-muted">4 Years</h6>
+                <p class="card-text">Experience gained from building hobby projects, including an ARPG and a third-person metroidvania</p>
+            </div>
+        </div>
+
+        <!--Keras-->
+        <div class="card col-xs-6 col-sm-4 col-lg-3" style="border: none; margin: 2rem" href="">
+            <img src="src/assets/images/keras_logo.png" class="card-img-top" style="scale: 75%;" alt="keras logo">
+            <div class="card-body">
+                <h5 class="card-title">Keras</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 Months</h6>
+                <p class="card-text">Experience from university coursework in neural network development</p>
+            </div>
+        </div>
+        
     </div>
+    <!-- contact info -->
+    <div class="contact_info text-center py-3">
+        <a href="src/assets/documents/Tanner_Hunt _Resume.docx" class="btn btn-secondary">Resume</a>
+        <a href="https://www.linkedin.com/in/tanner-hunt-co/" class="btn btn-secondary">Linkedin</a>
+        <a href="https://www.github.com/teriket" class="btn btn-secondary">github</a>
+    </div>
+</div>
+
+
+
+<!-- Add work history, schooling, projects section -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
