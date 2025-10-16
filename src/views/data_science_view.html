@@ -12,7 +12,7 @@
     <title>Tanner Hunt's portfolio</title>
   </head>
 
-  <body style="background-color: #122752;">
+  <body style="background-color: #122752;" class="container-xl container-fluid-lg">
    
    <!-- banner -->
     <div class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 3; background-color: aliceblue;">
@@ -28,10 +28,10 @@
     </div>
 
     <!-- Project Selection Area -->
-     <div class="border-bottom border-1">
+     <div class="container-fluid">
         <!-- header -->
-        <div class="" style="background-color: aliceblue;">
-            <h1 class="display-4 fw-bold text-body-emphasis border-bottom mx-4">Projects</h1>
+        <div class="row" style="background-color: aliceblue;">
+            <h1 class="display-4 fw-bold text-body-emphasis mx-4">Projects</h1>
         </div>
 
         <!-- Row of clickable cards -->
@@ -44,17 +44,17 @@
                     </svg>
                 </div>
                 <h2 class="border-bottom border-2">Travel Website & User Analytics</h2>
-                <p>A project built in SNHU CS465.  This is a website built upon a MEAN stack, which presents users with vacation packages and gives adminstrative staff an interface to manage CRUD operations.  This project was iterated upon in SNHU CS499 to additionally track user clicks and page views to present analytics to administrative staff.</p>
+                <p>A project built in SNHU's CS465: Full Stack Web Development.  This is a website built upon a MEAN stack, which presents users with vacation packages and gives adminstrative staff an interface to manage CRUD operations.  This project was iterated upon in SNHU CS499 to additionally track user clicks and page views to present analytics to administrative staff.</p>
             </div>
 
          </div>
      </div>
 
     <!-- Article Area -->
-     <div class="py-2" style="background-image: linear-gradient(aliceblue, #122752);">
+     <div">
         
         <!-- Article Image Carousel -->
-        <div id="carouselIndicators" class="carousel slide py-2 px-2">
+        <div id="carouselIndicators" class="carousel slide py-2 px-2" style="background-image: linear-gradient(aliceblue, #122752);">
         
         <!-- Indicator buttons on the bottom -->
         <div class="carousel-indicators">
@@ -96,13 +96,70 @@
         </div>
 
         <!-- article body -->
-        <div>
+        <div class="mx-4 text-white text-start">
+            <h2 class="fw-bold">Professional Self Assessment</h2>
+            <p class="f5">text goes here</p>
+
+            <h2 class="fw-bold">Project Narrative:</h2>
+            <h3 class="text-start fw-bold fst-italic">Introduction to the artifact</h3>
+            <p class="fs-5">This is a full stack application developed in SNHU’s CS465: Full Stack Development I.  
+                It was developed between the months of June and August, 2025.  This is a RESTful MEAN
+                 application with two components: a storefront that delivers statically 
+                 generated html content to users looking to purchase vacation packages and an angular
+                  website for administrators to create, update, and delete vacation packages.</p>
+            
+            <p class="fs-5">
+            I've added analytics to the webpage.  User page views will be recorded, 
+            and an analytics dashboard will be shown to admin users.  I selected this artifact to reflect 
+            the growing trend of big data in computer science.  Extracting information from user 
+            behaviors is a salient skill because recommender systems increase the value of a product 
+            to users which then generates revenue for a company.  Business analysts also use this 
+            information to make important decisions.  This also allows me to reflect in my portfolio 
+            the importance of ethics, data privacy, and secure coding practices in software engineering
+             because extracting personally identifiable information touches on those three domains.
+            </p>
+
+            <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
+            <p class="fs-5">The website now records when and which links users access.  Administrators
+                can see the total view count of each vacation package, as well as graphs of which
+                packages have been viewed.  This information is secured through an authentication
+                service. 
+            </p>
+
+            <h3 class="text-start fw-bold fst-italic">Reflection</h3>
+            <p class="fs-5">There were two related challenges I faced while building this enhancement.  
+                I had to refamiliarize myself with the project architecture as well as the technology 
+                stack.  One particular challenge I had to overcome was that data was not crossing over
+                between HTML tags and javascript.  This was caused by using uppercase letters in the 
+                data-* attribute.  While I've read that using uppercase letters in html 
+                attributes is bad practice, I didn't know this was why.  I overcame this challenge through
+                experimenting with my code.  Otherwise, what helped me in developing these features was to create incremental 
+                improvements, review past code I’ve written, and review API documentation.</p>
+
+            <h3 class="text-start fw-bold fst-italic">Skills Demonstrated</h3>
+            <p class="fs-5">Text goes here</p>
+
+            <h3 class="text-start fw-bold fst-italic">Course Outcomes Demonstrated</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">"Develop a security mindset that anticipates 
+                    adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
+                    mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Developing a mindset of security starts
+                    with design.  FINISH THIS
+                </li>
+            </ul>
+
+            <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
+            <p class="fs-5">Text goes here</p>
 
         </div>
 
         <!-- links -->
+        <div class="text-center">
+            <a href="https://github.com/teriket/cs465-fullstack/tree/module7" target="_blank" class="btn btn-primary my-2">Original Github Repo</a>
+        </div>
          <div class="text-center">
-            <a href="https://github.com/teriket/cs465-fullstack/tree/analytics" target="_blank" class="btn btn-primary">Github Repo</a>
+            <a href="https://github.com/teriket/cs465-fullstack/tree/analytics" target="_blank" class="btn btn-primary my-2">Updated Github Repo</a>
          </div>
 
      </div>

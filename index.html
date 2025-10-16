@@ -11,7 +11,7 @@
     <title>Tanner Hunt's portfolio</title>
   </head>
 
-  <body style="background-color: #122752;">
+  <body style="background-color: #122752;" class="container-xl container-fluid-lg">
     <!-- banner -->
     <div class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 3; background-color: aliceblue;">
         <div class="btn-group btn-group-md" >
@@ -25,8 +25,8 @@
         </div>
     </div>
 
-    <!-- header -->
-<div class="container-fluid position-relative" style="max-width: 2500px;">
+    <!-- header (backsplash and name card) -->
+<div class="position-relative">
     <!-- backsplash image -->
     <img src="src/assets/images/mountain_backsplash.jpg" 
          class="img-fluid" 
@@ -37,7 +37,7 @@
          style="background-color: aliceblue;z-index: 2; width: 300px">
         <img src="src/assets/images/headshot.png" class="img-fluid mb-3 rounded-circle" alt="Profile image">
         <h2 class="name_placard text-center">Tanner Hunt</h2>
-        <p class="text-center">I am a software engineer with an interest in data science, computer graphics, biomedical technology, and web development.</p>
+        <p class="text-center">I am a software engineer with an interest in data science, healthcare informatics, web development, and computer graphics.</p>
         <h3 class="text-center">Contact Information</h3>
         <p class="text-center">tanner.h.hunt@gmail.com</p>
         
@@ -54,20 +54,13 @@
 <p class="text-light mx-2 fst-italic">Image credits to Chand Alli, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">Wikimedia creative commons license </a></p> 
 </div>
 
-    <!-- Quote break -->
-     <!--
-    <div class="quote_break">
-        <p>quote text</p>
-    </div>
-    -->
-
-    <!-- skills -->
+    <!-- skills, education, technologies, work history, etc. -->
     <div class="px-4 pt-5 my-5 text-center border-bottom" style="background-image: linear-gradient(#122752, aliceblue )">
 
 <!-- Schooling -->
 <div class="container-fluid"">
     <h1 class="text-center text-white text-decoration-underline">Education</h1>
-    <!-- Schooling -->
+    <!-- Schools -->
     <div class="row align-items-center py-3">
         <!-- SNHU -->
         <div class="py-4 row">
@@ -84,34 +77,29 @@
                 <small>Graduated: 2025</small>
             </div>
         </div>
+        
+    </div>
+</div>
 
-        <!-- IBMC -->
+<!-- Work -->
+<div class="container-fluid"">
+    <h1 class="text-center text-white text-decoration-underline">Work</h1>
+    <!-- Each Job -->
+    <div class="row align-items-center py-3">
+        <!-- UCHealth -->
         <div class="py-4 row">
             <!-- Logo -->
             <div class="col-3 d-flex justify-content-center">
-                <img src="src/assets/images/ibmc-logo.png" class="rounded-circle img-fluid" alt="SNHU Logo">
+                <img src="src/assets/images/uchealth-logo.jpeg" class="rounded-circle img-fluid" alt="SNHU Logo">
             </div>
 
             <!-- Description -->
             <div class="col-8 ps-4 text-start text-white">
-                <h1 class="mb-0">Certificate in Medical Assisting</h1>
-                <p class="mb-0">IBMC College</p>
-                <small>Graduated: 2019</small>
-            </div>
-        </div>
-
-        <!-- Broadview University -->
-        <div class="py-4 row">
-            <!-- Logo -->
-            <div class="col-3 d-flex justify-content-center">
-                <img src="src/assets/images/broadview-logo.jpg" class="rounded-circle img-fluid" alt="SNHU Logo">
-            </div>
-
-            <!-- Description -->
-            <div class="col-8 ps-4 text-start text-white">
-                <h1 class="mb-0">B.S. Exercise Science</h1>
-                <p class="mb-0">Broadview University</p>
-                <small>Graduated: School closed my senior year (2017)</small>
+                <h1 class="mb-0">UCHealth</h1>
+                <h4 class="mb-0">Team Lead, Surgical Intensive Care</h4>
+                <small>Nov, 2018 - current</small>
+                <p class="mb-0">Used statistics to investigate indwelling urethral catheter cleanliness, which led to an 80% reduction in infection rates.  
+                    Also used python to clean and analyze patient deterioration data, which has impacted hiring practices for a new hospital. </p>
             </div>
         </div>
         

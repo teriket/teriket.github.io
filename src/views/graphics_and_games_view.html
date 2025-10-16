@@ -12,7 +12,7 @@
   </head>
 
   <!-- Todo, limit size of page content to a column that is centered -->
-  <body style="background-color: #122752;">
+  <body style="background-color: #122752;" class="container-xl container-fluid-lg">
    
    <!-- banner -->
     <div class="navbar navbar-inverse" style="position: sticky; top: 0; z-index: 3; background-color: aliceblue;">
@@ -28,10 +28,10 @@
     </div>
 
     <!-- Project Selection Area -->
-     <div class="border-bottom border-1">
+     <div class="container-fluid">
         <!-- header -->
-        <div class="" style="background-color: aliceblue;">
-            <h1 class="display-4 fw-bold text-body-emphasis border-bottom mx-4">Projects</h1>
+        <div class="row" style="background-color: aliceblue;">
+            <h1 class="display-4 fw-bold text-body-emphasis mx-4">Projects</h1>
         </div>
 
         <!-- Row of clickable cards -->
@@ -64,10 +64,10 @@
      </div>
 
     <!-- Article Area -->
-     <div class="py-2" style="background-image: linear-gradient(aliceblue, #122752);">
+     <div>
         
         <!-- Article Image Carousel -->
-        <div id="carouselIndicators" class="carousel slide py-2 px-2">
+        <div id="carouselIndicators" class="carousel slide py-2 px-2" style="background-image: linear-gradient(aliceblue, #122752);">
         
         <!-- Indicator buttons on the bottom -->
         <div class="carousel-indicators">
@@ -109,13 +109,61 @@
         </div>
 
         <!-- article body -->
-        <div>
+        <div class="mx-4 text-white text-start">
+            <h2 class="fw-bold">Professional Self Assessment</h2>
+            <p class="f5">text goes here</p>
+
+            <h2 class="fw-bold">Project Narrative:</h2>
+            <h3 class="text-start fw-bold fst-italic">Introduction to the artifact</h3>
+            <p class="fs-5">Text goes here, including justification of inclusion</p>
+
+            <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
+            <p class="fs-5">Text goes here</p>
+
+            <h3 class="text-start fw-bold fst-italic">Reflection</h3>
+            <p class="fs-5">Text goes here</p>
+
+            <h3 class="text-start fw-bold fst-italic">Skills Demonstrated</h3>
+            <p class="fs-5">Text goes here</p>
+
+            <h3 class="text-start fw-bold fst-italic">Course Outcomes Demonstrated</h3>
+            <ul class="list-group list-group-flush">
+                
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">1. "Employ strategies for building collaborative
+                    environments that enable diverse audiences to support organizational decision making in the field of computer
+                    science"</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+                    
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">2. "Design, develop, and deliver professional-quality
+                        oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific
+                        audiences and contexts."</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+                        
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">3. "Design and evaluate computing solutions that solve
+                            a given problem using algorithmic principles and computer science practices and standards approrpiate to its solution,
+                            while managing the trade-offs involved in design choices
+                </li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+                        
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">4. "Demonstrate an ability to use well-founded and
+                            innovative techniques, skills, and tools in computing practices for hte purpose of implementing computer solutions
+                            that deliver value and accomplish industry-specific goals"</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">5. "Develop a security mindset that anticipates 
+                            adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
+                            mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+            </ul>
 
         </div>
 
         <!-- links -->
+        <div class="text-center">
+            <a href="https://github.com/teriket/CS330_Portfolio_Computer_graphics" target="_blank" class="btn btn-primary my-2">Original Github Repo</a>
+        </div>
          <div class="text-center">
-            <a href="https://github.com/teriket/CS499_Graphics_Enhancements" target="_blank" class="btn btn-primary">Github Repo</a>
+            <a href="https://github.com/teriket/CS499_Graphics_Enhancements" target="_blank" class="btn btn-primary">Updated Github Repo</a>
          </div>
 
      </div>
