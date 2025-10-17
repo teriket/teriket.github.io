@@ -98,7 +98,43 @@
         <!-- article body -->
         <div class="mx-4 text-white text-start">
             <h2 class="fw-bold">Professional Self Assessment</h2>
-            <p class="f5">text goes here</p>
+            <p class="fs-5">Completing my bachelor's degree in computer science has grown my technical skills and prepared me
+                for professional work in several ways.  On the technical side, my education in data structures and algorithms 
+                has led me to think critically about the time and memory complexity of my designs. The program has also instilled
+                an appreciation for my role in an Agile team.  As a software engineer, I can bridge the gap between people and technology,
+                which is especially important because computers are inaccessible to many people.  As such, communicating with stakeholders
+                is important in ensuring my designs are accessible and properly fit the clients needs.  For example, in my UI/ UX
+                class, performing client interviews uncovered user needs that I hadn't originally anticipated.  My software security
+                coursework has given me a critical eye for exploitable code and trustworthy data.  Finally, my coursework in databases
+                and software engineering has empowered me to design efficient and scalable solutions that connect users to data.</p>
+            <p class="fs-5">
+                This portfolio piece demonstrates my technical skills in software design and engineering, algorithms and datastructures,
+                 and databases across two separate artifact enhancements.  Between these artifact enhancements, I aim to demonstrate competency 
+                 across all five of Southern New Hampshire Universities objectives for computer science students:</p>
+                 <ol>
+                    <li class="fs-5 fst-italic">"Employ strategies for building collaborative
+                environments that enable diverse audiences to support organizational decision making in the field of computer
+                science"</li>
+                    <li class="fs-5 fst-italic">"Design, develop, and deliver professional-quality
+                    oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific
+                    audiences and contexts."</li>
+                    <li class="fs-5 fst-italic">"Design and evaluate computing solutions that solve
+                        a given problem using algorithmic principles and computer science practices and standards approrpiate to its solution,
+                        while managing the trade-offs involved in design choices"</li>
+                    <li class="fs-5 fst-italic">"Demonstrate an ability to use well-founded and
+                        innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions
+                        that deliver value and accomplish industry-specific goals"</li>
+                    <li class="fs-5 fst-italic">"Develop a security mindset that anticipates 
+                        adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
+                        mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
+                 </ol>  
+            <p class="fs-5">
+                 The artifact attached to this article is a website redesigned from SNHU's CS465: Full Stack Web Development.  The
+                 enhancement aims to add data collection to a travel agencies website.  In doing so, I am demonstrating my ability
+                 to work with databases to deliver value to a client.  The other artifact, a refactorization of code from SNHU's
+                 CS330: Computer Graphics and Visualization, fulfills the software engineering and datastructures / algorithms 
+                 requirements for this portfolio piece.  It can be found in the "Computer Graphics" section of this website.
+            </p>
 
             <h2 class="fw-bold">Project Narrative:</h2>
             <h3 class="text-start fw-bold fst-italic">Introduction to the artifact</h3>
@@ -120,11 +156,12 @@
             </p>
 
             <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
-            <p class="fs-5">The website now records when and which links users access.  Administrators
-                can see the total view count of each vacation package, as well as graphs of which
-                packages have been viewed.  This information is secured through an authentication
-                service. 
-            </p>
+            <ul>
+                <li class="fs-5">The website now records when and which links users access</li>
+                <li class="fs-5">Administrators an see the total view count of each package</li>
+                <li class="fs-5">This information is secured through an authentication service</li>
+                <li class="fs-5">Administrators can view a graph of which vacation packages have been viewed</li>
+            </ul>
 
             <h3 class="text-start fw-bold fst-italic">Reflection</h3>
             <p class="fs-5">There were two related challenges I faced while building this enhancement.  
@@ -137,20 +174,43 @@
                 improvements, review past code I’ve written, and review API documentation.</p>
 
             <h3 class="text-start fw-bold fst-italic">Skills Demonstrated</h3>
-            <p class="fs-5">Text goes here</p>
+            <ul>
+                <li class="fs-5">Designing and implementing secure software</li>
+                <li class="fs-5">Implementing ethical software design</li>
+                <li class="fs-5">Database management through MongoDB</li>
+                <li class="fs-5">Front-end web design through Angular</li>
+                <li class="fs-5">Server-side management through Express.js and Node.js</li>
+            </ul>
 
             <h3 class="text-start fw-bold fst-italic">Course Outcomes Demonstrated</h3>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">"Develop a security mindset that anticipates 
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">1. "Employ strategies for building collaborative 
+                    environments that enable diverse audiences to support organizational decision making in the field of computer science"</li>
+                <li class="list-group-item  bg-transparent text-white fs-5">By creating visualizations for user data, stakeholders without
+                    training in database management are better able to make decisions from user data.  By using Angular, the code is easier to
+                    modify, which allows stakeholders to easily request feature changes and additions.
+                </li>
+
+                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">5. "Develop a security mindset that anticipates 
                     adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
                     mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
                 <li class="list-group-item  bg-transparent text-white fs-5">Developing a mindset of security starts
-                    with design.  FINISH THIS
+                    with design.  The current design anonymizes user data by storing it as an aggregate of page views.
+                    This loses the benefit of associating data with individual users and loses any insight gained
+                    from time-dependent variables.  Future designs could associate this data with users and store
+                    it in an encrypted database.  This data is also currently protected through an authentication
+                    service that users need to log in to.
                 </li>
             </ul>
 
-            <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
-            <p class="fs-5">Text goes here</p>
+            <h3 class="text-start fw-bold fst-italic">The Future</h3>
+            <p class="fs-5">The scope of this enhancement was limited, and by extension the possible insight that could be gained
+                from the system.  In the future, additional data could be harvested by collecting bounce rates from webpages, adding
+                client accounts to track individual users interests, and categorizing different vacation packages.  This additional
+                data could provide useful insights to business analysts.  Harvesting additional
+                data from users begs the question of ethics and data privacy.  Users should be notified of data collection practices,
+                and should have the option to opt-out of data collection.
+            </p>
 
         </div>
 

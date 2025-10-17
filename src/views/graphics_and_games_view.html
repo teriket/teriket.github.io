@@ -104,57 +104,177 @@
 
         <!-- Article Header  -->
         <div class="col">
-            <h2 class="text-light mx-4">CS499 Capstone Software Engineering Enhancement and Datastructures Enhancement</h2>
+            <h2 class="text-light mx-4">CS499 Capstone: Software Engineering Enhancement and Datastructures Enhancement</h2>
             <h4 class="text-light mx-4 fst-italic">October 12, 2025</h4>
         </div>
 
         <!-- article body -->
         <div class="mx-4 text-white text-start">
             <h2 class="fw-bold">Professional Self Assessment</h2>
-            <p class="f5">text goes here</p>
+            <p class="fs-5">Completing my bachelor's degree in computer science has grown my technical skills and prepared me
+                for professional work in several ways.  On the technical side, my education in data structures and algorithms 
+                has led me to think critically about the time and memory complexity of my designs. The program has also instilled
+                an appreciation for my role in an Agile team.  As a software engineer, I can bridge the gap between people and technology,
+                which is especially important because computers are inaccessible to many people.  As such, communicating with stakeholders
+                is important in ensuring my designs are accessible and properly fit the clients needs.  For example, in my UI/ UX
+                class, performing client interviews uncovered user needs that I hadn't originally anticipated.  My software security
+                coursework has given me a critical eye for exploitable code and trustworthy data.  Finally, my coursework in databases
+                and software engineering has empowered me to design efficient and scalable solutions that connect users to data.</p>
+            <p class="fs-5">
+                This portfolio piece demonstrates my technical skills in software design and engineering, algorithms and datastructures,
+                 and databases across two separate artifact enhancements.  Between these artifact enhancements, I aim to demonstrate competency 
+                 across all five of Southern New Hampshire Universities objectives for computer science students:</p>
+                 <ol>
+                    <li class="fs-5 fst-italic">"Employ strategies for building collaborative
+                environments that enable diverse audiences to support organizational decision making in the field of computer
+                science"</li>
+                    <li class="fs-5 fst-italic">"Design, develop, and deliver professional-quality
+                    oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific
+                    audiences and contexts."</li>
+                    <li class="fs-5 fst-italic">"Design and evaluate computing solutions that solve
+                        a given problem using algorithmic principles and computer science practices and standards approrpiate to its solution,
+                        while managing the trade-offs involved in design choices"</li>
+                    <li class="fs-5 fst-italic">"Demonstrate an ability to use well-founded and
+                        innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions
+                        that deliver value and accomplish industry-specific goals"</li>
+                    <li class="fs-5 fst-italic">"Develop a security mindset that anticipates 
+                        adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
+                        mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
+                 </ol>  
+            <p class="fs-5">  The artifact 
+                 attached to this article is a game engine that has been redesigned from SNHU's CS330: Computer Graphics and 
+                 Visualization.  The enhancement aims to rebuild the solution into a functioning game engine.  In doing so, I am
+                demonstrating my ability to design software systems based on a project specification and balance the tradeoffs between
+                data structures and algorithms that solve a given problem.  The other artifact, a refactorization of code from SNHU's
+                CS465: Full Stack Web Development, aims to showcase my ability to work with a database to solve a given problem.  This
+                artifact can be found in the "Data Science" page of this website. 
+            </p>
 
-            <h2 class="fw-bold">Project Narrative:</h2>
+            <h2 class="fw-bold">Project Narrative</h2>
             <h3 class="text-start fw-bold fst-italic">Introduction to the artifact</h3>
-            <p class="fs-5">Text goes here, including justification of inclusion</p>
+            <p class="fs-5">This artifact comes from SNHU’s CS330 Computational Graphics and Visualization course.  
+                The original code was a Phong renderer of a scene built from primitive geometry.  The updated design 
+                has the overarching goal of becoming a game engine that supports multiplayer, user-generated content.  
+                While this is a long-term project, the renderer has been rebuilt from the ground up through these enhancements
+                to support an entity component system and mesh rendering.
+            </p>
+
+            <p class="fs-5">I have several reasons for including this project in my ePortfolio.  As a long-term project, I can 
+                continuously showcase progress on code that is interactive, useful, and produces visually appealing outputs in my
+                ePortfolio.  I was also disappointed with the engineering aspects of the computational graphics and visualization class.  
+                The class had prebuilt code that emphasized students manipulating variables to pass to shaders – which students didn’t write. 
+                I saw – and wanted to create – improvements to the design and functionality of that code.  I also really enjoy
+                computational graphics, game engine design, and game programming as subjects.  I would have a fulfilling career in those fields.</p>
+
+            <p class="fs-5">
+                From a data structures and algorithms perspective, this project was included to showcase fundamental skills in data management.  The
+                tree structure game objects are stored in showcases pointer management and using searching algorithms, like breadth-first search.
+                Several classes, like the Renderer and MeshManager use vectors as queues.  Rendering also requires moving large
+                amounts of data from the CPU to the GPU.  This code showcases using openGL to efficiently pack and ship
+                data to be processed using structs.
+            </p>
 
             <h3 class="text-start fw-bold fst-italic">Enhancements Completed</h3>
-            <p class="fs-5">Text goes here</p>
+            <p class="fs-5">
+                <ul>
+                    <li class="fs-5">The entire code base was rewritten to support an ECS</li>
+                    <li class="fs-5">Gameobjects are now stored in a tree structure</li>
+                    <li class="fs-5">The engine now supports loading meshes and their textures</li>
+                    <li class="fs-5">Created UML document describing ECS architecture</li>
+                </ul>
+            </p>
 
             <h3 class="text-start fw-bold fst-italic">Reflection</h3>
-            <p class="fs-5">Text goes here</p>
+            <p class="fs-5">	I overcame, and learned from, both technical and design challenges.  On the technical side, 
+                I had to learn about importing and managing libraries, and compiling for different CPU architectures (like x86, 64-bit, Win32).  
+                On the design side, I hadn’t fully considered the multiplicity of some relationships.  This interfered with the algorithms I chose
+                to use.  I also found some objects had dependencies from other objects I hadn’t anticipated.  Fortunately, 
+                I found these challenges in the early prototyping stage of coding, so it was easy
+                 to update the designs.  I also didn't have a lot of experience using OpenGL and its supporting libraries.  To write the 
+                rendering algorithm, I had to learn fundamental concepts – like using VBO’s, VAO’s, and EBO’s as efficient 
+                busses of data from the CPU to the GPU.  One challenge I faced was that the resources I was learning from used 
+                different strategies and architectures to build their mesh renderer.  I had to understand their code and why it worked,
+                 then figure out how to write code form-fitted to my systems architecture.</p>
 
             <h3 class="text-start fw-bold fst-italic">Skills Demonstrated</h3>
-            <p class="fs-5">Text goes here</p>
+            <p class="fs-5"><ul>
+                <li class="fs-5">Using industry standard libraries, like OpenGL</li>
+                <li class="fs-5">Designing code with scalability and modularity in mind</li>
+                <li class="fs-5">Using industry standard design patterns</li>
+                <li class="fs-5">Balancing tradeoffs between algorithmic complexity and design decisions</li>
+
+            </ul></p>
 
             <h3 class="text-start fw-bold fst-italic">Course Outcomes Demonstrated</h3>
-            <ul class="list-group list-group-flush">
+            <p class="fs-5 fst-italic">1. "Employ strategies for building collaborative
+                environments that enable diverse audiences to support organizational decision making in the field of computer
+                science"</p>
+            <p class="fs-5">The previous iteration of this code was based on two monolithic
+                classes that added objects to a scene, handled user inputs, camera movements, and rendering.  This design was inaccessible
+                to anyone other than a computer scientist.  In building out this API, arists, designers, users, and other engineers are better 
+                able to interact with the code.  This is done by creating modular code that is easier for other engineers to interact with.  Both
+                standard design patterns and in-line comments support this. When a user interface
+                is applied on top of this API, other stakeholders won't have to worry about the technical details of the project, 
+                effectively bridging the gap between people and technology.
+            </p>
                 
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">1. "Employ strategies for building collaborative
-                    environments that enable diverse audiences to support organizational decision making in the field of computer
-                    science"</li>
-                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+            <p class="fs-5 fst-italic">2. "Design, develop, and deliver professional-quality
+                    oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific
+                    audiences and contexts."</p>
+            <p class="fs-5">A lot of the communications developed for this project are designed
+                for a technical audience.  It includes UML documents to describe the functionality of the code, and in-line code comments
+                to help other developers better understand the design intentions of the code.
+            </p>
                     
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">2. "Design, develop, and deliver professional-quality
-                        oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific
-                        audiences and contexts."</li>
-                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
-                        
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">3. "Design and evaluate computing solutions that solve
-                            a given problem using algorithmic principles and computer science practices and standards approrpiate to its solution,
-                            while managing the trade-offs involved in design choices
-                </li>
-                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
-                        
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">4. "Demonstrate an ability to use well-founded and
-                            innovative techniques, skills, and tools in computing practices for hte purpose of implementing computer solutions
-                            that deliver value and accomplish industry-specific goals"</li>
-                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
+            <p class="fs-5 fst-italic">3. "Design and evaluate computing solutions that solve
+                        a given problem using algorithmic principles and computer science practices and standards approrpiate to its solution,
+                        while managing the trade-offs involved in design choices"
+            </p>
+            <p class="fs-5">This code uses a tree structure to manage objects and their components.
+                The tree structure is more a convienience to users in managing their creations because balancing a tree would be destructive
+                to their workflow.  A benefit of this structure though is that the computational complexity of inserting and deleting objects
+                is O(1).  Searching for objects has a worst-case time complexity of O(n) because this tree must search through every element
+                to find an object.  Components on game objects are stored in vectors.  While this would mean that insertion, searches, and deletion
+                of components on a game object would have an O(n) time complexity, game objects are expected to have few components attached to them.
+                Functionally, this means they have an O(1) time complexity.
+            </p>
+                    
+            <p class="fs-5 fst-italic">4. "Demonstrate an ability to use well-founded and
+                        innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions
+                        that deliver value and accomplish industry-specific goals"</p>
+            <p class="fs-5">There are several design patterns within the desing space of game
+                engines that makes code reusable, extensible, and efficient.  This code uses an entity component system, which makes reusing code
+                between objects easier, and enables objects to easily communicate with eachother via Liskov substitution.  Another pattern present
+                in this code is the use of singletons.  Singletons ensure that only a single instance of an object is shared between different objects.
+                In the context of the game engine, this is performant because it allows objects to share resources rather than instantiating 
+                redundant ones.  Because the engine needs to "run" at least 60 times a second, reducing resource usage is paramount to creating
+                a performant rendering engine.  One way this could be improved is by adding unit tests to the game engine.
+            </p>
 
-                <li class="list-group-item  bg-transparent text-white fst-italic fs-5">5. "Develop a security mindset that anticipates 
-                            adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
-                            mitigate design flaws, and ensure privacy and enhanced security of data and resources"</li>
-                <li class="list-group-item  bg-transparent text-white fs-5">Description</li>
-            </ul>
+            <p class="fs-5  fst-italic">5. "Develop a security mindset that anticipates 
+                        adversarial exploits in software architecture and designs to expose potential vulnerabilities, 
+                        mitigate design flaws, and ensure privacy and enhanced security of data and resources"</p>
+            <p class="fs-5">This game engine is designed with user-generated multiplayer content in mind.
+                As such, users are capable of creating scenes with deeply nested objects, then calling a recursive object search which
+                could lead to stack overflow errors and game instability.  To prevent this, objects track how deep they are within the
+                tree, and reject object creation if it is too deep.  Similarly, users could create massive scenes that hog server-side resources.
+                While it is a goal that users should be able to build their vision, it is also expected that the game is stable and performant.
+                As such, scenes track and limit their sizes.
+            </p>
+
+            <h3 class="text-start fw-bold fst-italic">The Future</h3>
+            <p class="fs-5">The work demonstrated in this article is merely early API development, and a front-facing video game does not live solely
+                on an API.  Future development should be focused on building an interface that users can build levels with.  This includes UI/UX components
+                to add models to a scene, a visual scripting language to add functionality to user creations, playable characters, and a server to host games on.
+                Additionally, the API also requires an added physics and sound systems -- which would likely mean importing additional libraries.  More rendering
+                features and shaders could also be added to the code to enhance the look of the game.
+            </p>
+            <p class="fs-5">From a software fundamentals perspective, this code could be enhanced in several ways.  Many objects currently use pointers over unique_ptr or 
+                shared_ptr, which puts the system at risk for memory leaks.  The use of singleton objects is also inconsistent between manager classes.
+                The current design is also inflexible when it comes to using shaders.  While I am happy with the modularization of most of this code,
+                the rendering, materials, shader, and texture code should be teased apart further to make future development easier.  Finally, there still exists
+                code provided by SNHU and learnopengl.com in this code base, which should be refactored for originality for the sake of copyright law.
+            </p>
 
         </div>
 
