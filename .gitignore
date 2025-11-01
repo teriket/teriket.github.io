@@ -1,0 +1,6 @@
+
+# ignore sensitive environment data
+.env
+
+# ignore editor data
+.vscode/
